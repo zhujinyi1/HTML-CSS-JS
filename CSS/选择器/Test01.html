@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复合选择器</title>
+    <style>
+        /* 将class为red元素设置为红色 */
+        .red{
+            color:red;
+        }
+        /* 将class为red的div设置为红色 */
+        /* 交集选择器，
+            选中同时符合条件的元素
+            语法：选择器1.选择器2.选择器3{}
+            交集选择器中如果有元素选择器元素选择器开头
+         */
+        div.red{
+            font-size:60px;
+        }
+        /* h1{
+            color:aqua;
+        }
+        span{
+            color:aqua;
+        } */
+        
+        /*
+         并集选择器：
+            同时选择多个选择器对应的元素
+             语法：选择器1,选择器2,选择器3{}
+         */
+
+         /* 选择器可以自由组合 */
+        h1,span{
+            color:aqua;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="red">我是div</div>
+    <p class="red">我是p</p>
+    <h1>标题</h1>
+    <span>hahaha</span>
+</body>
+</html>

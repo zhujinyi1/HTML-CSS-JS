@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .box1{
+            /* 
+                内容区：元素中所有子元素和文本内容在内容区排列
+                    内容区大小：width，height
+             */
+             width:200px;
+             height:200px;
+             background-color: aqua;
+             /* 
+                边框：处于何子边缘，边框里边属于盒子内部，除了边框是盒子外部
+                    边框大小会影响盒子大小
+                设置边框，三个样式
+                    border-width      宽  
+                    border-color      颜色
+                    border-style      样式 
+              */
+              border-width:10px;
+              border-color:burlywood;
+              border-style:solid;/*实线*/    
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        盒模型
+            -CSS将页面中每一个元素设置成了一个盒子
+            -将元素设置为盒子后，对页面布局就变成了将盒子摆放到不同位置
+            -每一个盒子由以下几个部分组成：
+                内容区
+                内边距
+                边框
+                外边距
+     -->
+     <div class="box1">div1</div>
+</body>
+</html>

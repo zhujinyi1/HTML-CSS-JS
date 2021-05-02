@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>超链接伪类</title>
+    <style>
+        /*
+            link表示没访问过的链接
+
+         */
+        a:link{
+            color:red;
+        }
+        /*
+            visited表示没访问过的链接
+            
+            由于隐私的原因， visited只能修改颜色，不建议使用visited
+         */
+        a:visited{
+            color:orange;
+        }
+        
+        /*
+            :hover 表示鼠标移入状态
+            :active 表示鼠标点击状态 
+         */
+        a:hover{
+            color:blue;
+        }
+        a:active{
+            color:brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+        超链接的状态：
+            访问过与没访问过
+
+     -->
+    <a href="http://www.baidu.com">Baidu访问过</a>
+    <br>
+    <a href="https://ai.taobao.com/?pid=mm_26632323_6762370_25910879&clk1=0b5eddb9a6e73e91e4b7f3c470fa7a1c">没访问过</a>
+</body>
+</html>

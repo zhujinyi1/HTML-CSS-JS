@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        audio标签用于引用音频
+        音视频文件引入时，默认不允许自己停止
+
+        controls  是否允许用户控制播放
+        autoplay  是否自动播放
+            -设置autoplay，音乐打开时自动播放
+            但是大部分浏览器不支持自动播放
+        loop  循环播放
+    -->
+    <audio src="../src/Pacific Rim.flac" loop controls autoplay></audio>
+    <!--
+        写法二，可以设置报错，当显示不出来时系统会给出提示
+    -->
+    <audio loop controls autoplay>
+        对不起，您的浏览器不支持该功能，请升级浏览器
+        <source src="../src/Pacific Rim.flac">
+        <!--
+            同时使用多文件，浏览器会优先使用第一个
+        -->
+        <source src="../src/Pacific Rim.ogg">
+        </audio>
+    <!--
+    embed此写法支持所有浏览器，缺点，会自动播放，要指定width和height，type必须指定（类型）
+-->
+    <embed src="../src/Astronomia.flac" type="audio/mp3" width="400" height="100">
+</body>
+
+</html>
