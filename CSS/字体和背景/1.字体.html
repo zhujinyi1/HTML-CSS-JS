@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 将服务器中的字体直接提供给用户 */
+        /* 
+            font-face 问题
+            1.加载速度问题
+            2.版权字体，收费
+            3.字体格式问题
+         */
+        @font-face {
+            font-family: 'myfont';
+            /* 此处写字体路径 */
+            /* 提供两个格式，一个不支持用第二个 */
+            /* format 指定格式 */
+            src: url(./font/HuaKangLangManFengW7-2.ttc) format('truetype'),
+                 url(./font/HuaKangLangManFengW7-2.ttc);
+        }
+        p{
+            /* 
+                字体相关样式
+                    color 字体颜色
+                    font-size 设置字体大小
+                        em相当于一个字体大小
+                        rem相对于一个根元素大小
+                    font-family 字体族
+                        可选值：（只是一个分类，浏览器使用其中任意一款字体，一般不会单独使用）
+                            serif       衬线字体  
+                            sans-serif  非衬线字体
+                            monospace   等宽字体
+                            cursive
+                            fantasy
+                    可以同时使用多个字体，用逗号隔开，第一个没有就用第二个...
+             */
+             /* font-family: 'Courier New',Courier,monospace; */
+             font-family: 'myfont';
+        }
+    </style>
+</head>
+<body>
+    <p>
+        今天天气真不错
+    </p>
+</body>
+</html>
