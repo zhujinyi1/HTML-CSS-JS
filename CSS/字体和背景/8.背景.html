@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            width: 500px;
+            height: 500px;
+            background-color: #bfa;
+            /* 
+                background-color  背景颜色
+                background-image  背景图片
+                    -可以同时设置背景图片和背景色,背景色会变为图片的背景色
+                    -图片小的话会平铺
+                    -图片大会只显示一部分
+
+            */
+            background-image: url("./src/滑稽.gif");
+            /* 
+               background-repeat: ;
+                 可选值:
+                    repeat 默认值,沿x,y平铺
+                    repeat-x 沿x轴平铺
+                    repeat-y 沿y轴平铺
+                    no-repeat 背景图片不重复
+                             */
+            background-repeat: repeat;
+            /* 
+                background-position设置位置
+                    设置方式:
+                        通过top,left,right,bottom,center几个表示方位的词
+                        需要两个值,如果只写一个第二个默认center
+
+                        通过偏移量设置
+             */
+             background-position: center center;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+</body>
+</html>

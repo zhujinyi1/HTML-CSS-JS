@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        现实生活中，需要用表格表示数据
+            成绩单，人名单....
+        同样，网页中也要有表格
+        table创建表格
+     -->
+     <table border="1" width='50%' align="center">
+         <!-- 
+             用tr表示一行行
+             用td表示单元格
+          -->
+         <tr>
+             <td>A1</td>
+             <td>A5</td>
+             <td>A4</td>
+             <td>A3</td>
+             <td>A2</td>
+         </tr>
+         <tr>
+             <td>A1</td>
+             <!-- 占几行 -->
+             <td rowspan="2">A5</td>
+             <td>A4</td>
+             <td>A3</td>
+             <td>A2</td>
+         </tr>
+         <tr>
+             <td>A1</td>
+             <td>A4</td>
+             <!-- 占几列 -->
+             <td colspan="2">A3</td>
+         </tr>
+     </table>
+</body>
+</html>

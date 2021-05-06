@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 500px;
+            height: 500px;
+            overflow: auto;
+            background-color: #bfa;
+            background-image: url('./src/滑稽.gif');
+            background-repeat: no-repeat;
+            border: 10px red double;
+            /* background-clip: ;背景裁剪
+                border-box 出现在边框
+                padding-box 不会出现在边框，只出现在内容区和内边距
+                content-box 背景只出现在内容区
+
+                background-origin:;背景图片偏移量计算原理
+                    padding-box 默认值，从内容区计算
+                    content-box 从边框计算
+                    border-box  从边框计算
+
+             */
+            background-origin: padding-box;
+            background-clip: border-box;
+
+            /* 
+                background-size设置背景图片尺寸
+                  只写一个等比例缩放
+
+                cover 比例不变，元素铺满，不保证完整显示
+                contain 比例不变，图片显示完整
+
+             */
+            background-size: 100% auto;
+        }
+
+        .box2 {
+            width: 300px;
+            height: 1000px;
+            background-color: orange;
+            background-image: url('./src/Sprite.png');
+            background-repeat: no-repeat;
+            /* background-attachment
+                -背景图片是否会跟随元素移动
+                -可选值：
+                scroll 默认值，跟随背景滚动
+                fixed  固定不动
+             */
+            background-attachment: fixed;
+            /* background:背景简写属性
+                    -没有哪个属性是必须写的
+                    -background-size必须写在background-position后面，并且使用/隔开
+                    -background-origin必须写在background-clip前面           
+              */
+            background: url('./src/滑稽.gif') #bfa center center/contain border-box content-box no-repeat ;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2">
+            fsgesrndgdgsxgbbdbbbfbfg
+            ffvsfvvdfbf
+            bbdbdbdzbnnn
+            hhngfnnnnnnnnnnnnnnn
+            vmmhmmryyynynfhnfhxD
+        </div>
+    </div>
+</body>
+
+</html>
