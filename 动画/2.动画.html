@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1{
+            height: 800px;
+            width: 800px;
+            background-color: silver;
+            overflow: hidden;
+            margin-right: 0;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 100px;
+            margin-left: 0;
+            background-color: #bfa;
+
+
+            animation-name: test;
+            animation-duration: 2s;
+            /* 
+            animation-direction: normal;
+                动画执行方向：normal，默认值，from-to
+                            reverse  反向
+                            alternate 往返
+                            alternate-reverse 反向往返
+             */
+            animation-direction: normal;
+            /* animation-delay: 2s; */
+            /* animation-iteration-count: ;
+                动画执行次数 
+                infinite 无限执行
+             */
+            animation-iteration-count:infinite;
+            /* animation-play-state: ;
+                动画执行状态
+                    running 运行
+                    paused  停止
+             */
+            animation-play-state:running ;
+            /* animation-fill-mode: ;
+                动画填充模式：
+                    默认值：none 结束回到原来位置
+                            forwards 结束停止在动画结束位置
+                            backwards 动画等待时就变成from状态
+                            both 结合forward和backwards
+             */
+            animation-fill-mode: backwards;
+        }
+        /* 
+            动画
+                动画和过渡都可以实现动态效果，用法相似
+                    过渡需要触发
+                    动画可以修改自动触发
+                动画需要关键帧，关键帧决定了步骤
+         */
+         @keyframes test{
+             from{
+                 margin-left:0;
+             }
+             to{
+                 margin-left: 700px;
+             }
+         }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

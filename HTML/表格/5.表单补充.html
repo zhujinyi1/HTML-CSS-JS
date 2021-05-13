@@ -8,14 +8,37 @@
 </head>
 <body>
     <form action="target.html">
-        <input type="text" name="username" value="hello">
+
+        <!-- 
+            autocomplete="off" 关闭自动补全
+            readonly      设置为只读,会提交
+            disabled      禁用，不会提交
+            autofocux     自动获取焦点
+         -->
+        <input type="text" name="username" autocomplete="off">
+        <br><br>
+        <input type="text" name="username" value="hello" disabled>
+        <br><br>
+        <input type="text" name="username" value="hello" autofocus>
+        <br><br>
+        <input type="text" name="username" value="hello" readonly>
+        
+        
         <br>
 
         <!-- 调色板（兼容性不好） -->
         <input type="color">
-        
+        <br>
+
         <input type="submit">
-        
+        <br>
+
+        <!-- 电子邮件（和文本框不同点就是自动检查格式）
+            不用的原因，不同浏览器显示结果不同
+        -->
+        <input type="email">
+        <br>
+
         <!-- 重置按钮 -->
         <input type="reset">
         <br>
